@@ -1,16 +1,12 @@
-# flortune_cookie
+<img src="https://github.com/kollerlukas/flortune_cookie/raw/master/assets/ic_launcher_android.png" alt="Icon"
+width="100">
 
-Get a Fortune Cookie
+# Flortune Cookie
 
-## Getting Started
+Get a free Fortune Cookie!
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+// TODO
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
