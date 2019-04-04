@@ -15,4 +15,6 @@ Get a free Fortune Cookie!
 
 ### IOS
 
-// TODO
+<div>
+<img src="https://github.com/kollerlukas/flortune_cookie/raw/master/screenshots/screenshot-ios.png" alt="Screenshot" width="200">
+</div>
