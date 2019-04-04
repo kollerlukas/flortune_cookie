@@ -44,7 +44,7 @@ class _FortuneCookieState extends State<_FortuneCookiePage> {
           'Flortune Cookie',
           style: TextStyle(color: Colors.red[900].withAlpha(150)),
         ),
-        elevation: 0.0,
+        elevation: 0,
         backgroundColor: Colors.transparent,
       ),
       backgroundColor: Colors.red[200],
@@ -52,7 +52,7 @@ class _FortuneCookieState extends State<_FortuneCookiePage> {
           stream: _loader.stream,
           initialData: '',
           builder: (context, snapshot) => Container(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16),
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -61,7 +61,15 @@ class _FortuneCookieState extends State<_FortuneCookiePage> {
                     // fortune card
                     _buildFortune(snapshot.data),
                     // add button
-                    _buildButton()
+                    _buildButton(),
+                    Align(
+                        alignment: Alignment.bottomRight,
+                        child: Text(
+                            'Fortunes from: http://yerkee.com/api/fortune',
+                            style: TextStyle(
+                                fontSize: 9,
+                                color: Colors.red[900].withAlpha(100),
+                                fontWeight: FontWeight.bold)))
                   ]))));
 
   _buildCookie() => Expanded(
@@ -70,17 +78,17 @@ class _FortuneCookieState extends State<_FortuneCookiePage> {
   _buildFortune(fortune) => Flexible(
       child: Card(
           child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16),
               child: Text(fortune,
                   style: TextStyle(
-                      fontSize: 12.0,
+                      fontSize: 12,
                       color: Colors.black87,
                       fontWeight: FontWeight.bold)))));
 
   _buildButton() => Align(
       alignment: Alignment.bottomCenter,
       child: Padding(
-          padding: const EdgeInsets.all(32.0),
+          padding: const EdgeInsets.all(32),
           child: RaisedButton(
               color: Colors.amber[300],
               textColor: Colors.deepOrange[900].withAlpha(100),
